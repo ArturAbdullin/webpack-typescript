@@ -8,3 +8,6 @@ if (form) {
     console.log(formData(form));
   })
 }
+
+const person: any = {};
+console.log(person.speak());
