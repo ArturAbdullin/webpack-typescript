@@ -14,20 +14,36 @@
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("\r\nfunction sum(a, b) {\r\n    return a + b;\r\n}\r\nconsole.log(sum(5, 10));\r\nconsole.log(sum(1, 2));\r\n\n\n//# sourceURL=webpack://webpack-typescript-setup/./src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './forms'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\r\nconst form = document.querySelector('form');\r\nif (form) {\r\n    form.addEventListener('submit', () => {\r\n        console.log(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './forms'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(form));\r\n    });\r\n}\r\n\n\n//# sourceURL=webpack://webpack-typescript-setup/./src/index.ts?");
 
 /***/ })
 
 /******/ 	});
+/************************************************************************/
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/index.ts"]();
+/******/ 	__webpack_modules__["./src/index.ts"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ })()
 ;

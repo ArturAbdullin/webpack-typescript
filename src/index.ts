@@ -1,6 +1,10 @@
-function sum(a: number, b: number): number {
-  return a + b;
-}
+import { formData } from "./forms";
 
-console.log(sum(5, 10));
-console.log(sum(1, 2));
+const form = document.querySelector('form');
+
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log(formData(form));
+  })
+}
